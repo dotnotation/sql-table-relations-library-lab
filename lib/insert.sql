@@ -1,0 +1,6 @@
+INSERT INTO series (title, author_id, subgenre_id) VALUES ("Undead", 1, 1), ("Harry Potter", 2, 2);
+INSERT INTO subgenres (name) VALUES ("Romantic Comedy"), ("Fantasy");
+INSERT INTO authors (name) VALUES ("Mary Janice Davidson"), ("J.K. Rowling");
+INSERT INTO books (title, year, series_id) VALUES ("Undead and Unwed", 2004, 1), ("Undead and Unemployed", 2004, 1), ("Undead and Unappreciated", 2005, 1), ("Harry Potter and the Sorcerers Stone", 1997, 2), ("Harry Potter and the Chamber of Secrets", 1998, 2), ("Harry Potter and the Prisoner of Azkaban", 1999, 2);
+INSERT INTO characters (name, motto, species, author_id, series_id) VALUES ("Betsy Taylor", "Aw, thon of a bith", "Vampire", 1, 1), ("Eric Sinclair", "I'm not playing vamp politics.", "Vampire", 1, 1), ("Marc", "Well, you did the best you could.", "Human", 1, 1), ("Antonia", "Will you get a hold of yourself?", "Werewolf", 1, 1), ("Harry Potter", "Yeah, you can have a word. Good-bye.", "Human", 2, 2), ("Rubeus Hagrid", "You're a Wizard, Harry.", "Half Giant", 2, 2), ("Dobby", "Dobby", "House Elf", 2, 2), ("Remus Lupin", "Awoooo!", "Werewolf", 2, 2);
+INSERT INTO character_books (book_id, character_id) VALUES (1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (3, 1), (3, 2), (3, 4), (4, 5), (4, 6), (5, 5), (5, 6), (5, 8), (6, 5), (6, 6), (6, 7);
